@@ -1,0 +1,41 @@
+body {
+   width: 100vw; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.question label{
+    padding-bottom:10px;
+}
+.submit-button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px black solid;
+    padding: 7px;
+}
