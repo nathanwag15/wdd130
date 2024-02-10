@@ -75,6 +75,9 @@ nav a:hover {
 header img{
     width: 90px;
 }
+iframe{
+    border: 0;
+}
 
 .hero {
     position: relative;
@@ -160,4 +163,233 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.employee-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.squares-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.squares-wrapper > .squares{
+   width: 1000px;
+}
+
+.squares-wrapper > .squares > .square{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -4px;
+}
+
+.square > .image-wrapper img {
+   width: 100%;
+   height: 500px;
+   object-fit: cover;
+}
+
+.square > .square-text-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 42px
+}
+
+.square > .square-text-wrapper h1{
+   color: #cea135;
+}
+
+
+.company-information-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-detail{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.location{
+    text-align: center;
+}
+
+.form{
+}
+
+.form > .form-group {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 3px solid #11122b;
+    display: block;
+    transition: all 0.3s;
+    width: 100% ;
+}
+
+.form input:focus{
+    outline:none;
+    box-shadow: 0 2rem 2rem  rgba(0,0,0,0.1);
+    border-bottom: 3px solid #F5C83A;
+}
+
+.form-group-radio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+
+.form textarea {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    border-radius: 3px;
+    border: 3px solid #11122b;
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s;
+}
+
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder{
+    color: #11122b;
+}
+
+.form label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    color: #1EA192;
+    visibility: hidden;
+    opacity:0;  
+}
+
+.form textarea:focus{
+    outline:none;
+    box-shadow: 0 2em 2rem  rgba(0,0,0,0.1);
+    border: 3px solid #F5C83A;
+}
+
+.form input:focus + label, textarea:focus + label {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(1rem);
+}
+
+.form input:focus::-webkit-input-placeholder, .form textarea:focus::-webkit-input-placeholder{
+    color:transparent;
+}
+
+.btn{
+    background-color: #1EA192;
+    color: #11122b;
+    font-size: 1.25em;
+    padding: 10px 25px;
+    border: 1px solid #1EA192;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, .4);
+}
+
+.btn:active{
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0);
+}
+
+.centered-btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.form-group-radio label{
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: block;
+    color: #F5C83A;
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-group-radio input[type='radio']{
+    width: 20px;
+}
+
+.form-group-radio input:focus{
+    box-shadow: none;
+    border-bottom: none;
+}
+
+.form-group-checkbox input:focus{
+    box-shadow: none;
+    border-bottom: none;
+}
+
+
+.form-group-radio input:focus + label, textarea:focus + label {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+
+.form-group-checkbox input:focus + label, textarea:focus + label {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+
+.form-group-radio h2{
+    padding: 10px;
+}
+
+.radio-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.form-group-checkbox{
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding:20px;
+}
+
+.form-group-checkbox label{
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: block;
+    color: #F5C83A;
+    opacity: 1;
+    visibility: visible;
+    width: 550px;
+}
+
+.spacer10{
+    height: 100px;
+    width: 100%
 }
