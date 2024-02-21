@@ -225,6 +225,7 @@ footer{
 }
 
 .form{
+    
 }
 
 .form > .form-group {
@@ -305,11 +306,11 @@ footer{
 }
 
 .btn{
-    background-color: #1EA192;
+    background-color: var(--secondary-color);
     color: #11122b;
     font-size: 1.25em;
     padding: 10px 25px;
-    border: 1px solid #1EA192;
+    border: 1px solid var(--secondary-color);
     outline: none;
     transition: 0.3s;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, .4);
@@ -392,4 +393,56 @@ footer{
 .spacer10{
     height: 100px;
     width: 100%
+}
+
+h1{
+    align-items: center;
+    width: 100%;
+    text-align: center;
+
+}
+
+.trip-details-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    padding: 40px;
+}
+
+.trip-details{
+    padding: 30px;
+}
+
+.trip-table-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td{
+    border: black solid 1px;
+    
+
+}
+
+th, td{
+    padding: 40px;
+}
+
+th{
+    background-color: var(--accent2-color);
+}
+
+
+
+.call-to-action-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.call-to-action-wrapper p{
+    font-size: 1.2rem;
 }
