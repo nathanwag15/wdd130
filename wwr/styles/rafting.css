@@ -27,7 +27,7 @@ body{
 
 header{
     display: grid;
-    width: calc(100%-15px);
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     background-color: var(--nav-background-color);
     padding: 15px;
@@ -104,7 +104,7 @@ iframe{
 }
 
 .hero-content h1{
-    color: var(--accent2-color);
+    color: #90903E;
     padding: 5px 50px;
     text-align: center;
     background-color: rgb(0, 0, 0, .8)
@@ -306,11 +306,11 @@ footer{
 }
 
 .btn{
-    background-color: var(--secondary-color);
+    background-color: #F5C83A;
     color: #11122b;
     font-size: 1.25em;
     padding: 10px 25px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid #F5C83A;
     outline: none;
     transition: 0.3s;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, .4);
@@ -431,7 +431,7 @@ th, td{
 }
 
 th{
-    background-color: var(--accent2-color);
+    background-color: #90903E;
 }
 
 
